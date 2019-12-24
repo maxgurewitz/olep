@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/maxgurewitz/olep/pkg/payment_executor"
+)
 
 func main() {
-	fmt.Printf("hello, world1\n")
+	payment_executor.Init()
 }
