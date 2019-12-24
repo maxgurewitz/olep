@@ -1,7 +1,14 @@
 package payment_executor
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func Init() {
-	fmt.Printf("hello, world\n")
-}
+	r := gin.Default()
+	r.GET("/ping", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+	r.Run()}
