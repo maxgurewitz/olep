@@ -33,7 +33,7 @@ securityContext: {}
 service:
   name: go-app
   type: NodePort
-  externalPort: 8080
+  externalPort: 80
   internalPort: 8080
 
 ingress:
